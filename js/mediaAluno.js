@@ -1,6 +1,5 @@
 function relatorio() {
     var nome = (document.getElementById('nome').value);
-    var sobrenome = (document.getElementById('sobrenome').value);
     var curso = (document.getElementById('curso').value);
     var nota1 = parseFloat(document.getElementById('nota1').value);
     var nota2 = parseFloat(document.getElementById('nota2').value);
@@ -16,7 +15,7 @@ function relatorio() {
     } else {
         situacao = "APROVADO"
     }
-    var resposta = nome + " " + sobrenome + ", você está " + situacao + " na disciplina " + curso + ", com média " + resultado;
+    var resposta = nome + ", você está " + situacao + " na disciplina " + curso + ", com média " + resultado;
 
 
     document.getElementById('txtResultado').setAttribute("value", resposta);

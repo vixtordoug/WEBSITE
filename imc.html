@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+    <script type="text/javascript" src="js/imc.js"></script>
+    <!-- Script para chamar o dropdown -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.dropdown-trigger');
@@ -12,6 +13,7 @@
             });
         });
     </script>
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -24,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vixtordoug</title>
 
+    <!-- Dropdown Questões -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="mediaAluno.html">Calcular Média</a></li>
         <li><a href="carnePagamento.html">Gerar Carnê</a></li>
@@ -50,6 +53,37 @@
 
 <body>
     <h4>Calculador IMC</h4>
+
+    <!-- Formulário -->
+    <div class="row">
+        <form class="col s12">
+            <!-- Campo nome -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="nome" type="text" class="validate">
+                    <label for="nome">Nome</label>
+                </div>
+            </div>
+
+            <!-- Campo Peso -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Ex: 60" id="peso" type="text" class="validate">
+                    <label for="peso">Peso (Kg)</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Ex: 1.72" id="altura" type="text" class="validate">
+                    <label for="altura">Altura (m)</label>
+                </div>
+            </div>
+        </form>
+        <div>
+            <input class="button button1" type="button" onclick="javascript:calculadoraIMC();" name="name" value="Resultado">
+            <input placeholder="Resultado aqui" type="text" id="txtResultado" value="">
+        </div>
+    </div>
+
+
     <main>
 
     </main>
@@ -260,8 +294,8 @@
 
 
 </body>
-<!-- Rodapé -->
 
+<!-- Rodapé -->
 <footer class="page-footer">
     <div class="container">
         <div class="row">
