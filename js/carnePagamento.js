@@ -20,7 +20,7 @@ function gerarCarne() {
     
 
     for( var i = 1; i <= parcelas; i++ ) {
-        document.writeln("<br>\n---------------------------------------------- CARNÊ DE PAGAMENTO ----------------------------------------------<br>\n CLIENTE: " + nome + "<br>\nPRODUTO: " + produto + "<br>\nVALOR DO PRODUTO: " + valorProduto + "<br>\nQUANTIDADE: " + quantidade + "<br>\nVALOR TOTAL: " + valorTotal.toFixed(2) + "<br>\nPARCELAS: " + i + "/ " + parcelas + "<br>\n--------------------------------------------------------------------------------------------------------------------------------<br>\n<br>\n<br>\n<br>\n") ;
+        document.writeln("<br>\n---------------------------------------------- CARNÊ DE PAGAMENTO ----------------------------------------------<br>\n CLIENTE: " + nome + "<br>\nPRODUTO: " + produto + "<br>\nVALOR DO PRODUTO: R$" + valorProduto + "<br>\nQUANTIDADE: " + quantidade + "<br>\nVALOR TOTAL: R$" + valorTotal.toFixed(2) + "<br>\nPARCELAS: " + i + "/ " + parcelas + "<br>\n--------------------------------------------------------------------------------------------------------------------------------<br>\n<br>\n<br>\n<br>\n") ;
     }
       
        
