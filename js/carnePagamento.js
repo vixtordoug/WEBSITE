@@ -11,16 +11,16 @@ function gerarCarne() {
     valorTotal = valorProduto * quantidade;
 
     //Requisitos de Negócio
-    if (parcelas = 3) {
+    if (parcelas == 3) {
         valorTotal = valorTotal * 1.05
-    } else if (parcelas = 6) {
+    } else if (parcelas == 6) {
         valorTotal = valorTotal * 1.12
     }
 
     
 
     for( var i = 1; i <= parcelas; i++ ) {
-        document.writeln("---------------------------------------------- CARNÊ DE PAGAMENTO ----------------------------------------------<br>\n CLIENTE: " + nome + "<br>\nPRODUTO: " + produto + "<br>\nVALOR DO PRODUTO: " + valorProduto + "<br>\nQUANTIDADE: " + quantidade + "<br>\nVALOR TOTAL: " + valorTotal + "<br>\nPARCELAS: " + i + "/ " + parcelas + "<br>\n--------------------------------------------------------------------------------------------------------------------------------<br>\n<br>\n<br>\n<br>\n") ;
+        document.writeln("<br>\n---------------------------------------------- CARNÊ DE PAGAMENTO ----------------------------------------------<br>\n CLIENTE: " + nome + "<br>\nPRODUTO: " + produto + "<br>\nVALOR DO PRODUTO: " + valorProduto + "<br>\nQUANTIDADE: " + quantidade + "<br>\nVALOR TOTAL: " + valorTotal.toFixed(2) + "<br>\nPARCELAS: " + i + "/ " + parcelas + "<br>\n--------------------------------------------------------------------------------------------------------------------------------<br>\n<br>\n<br>\n<br>\n") ;
     }
       
        
